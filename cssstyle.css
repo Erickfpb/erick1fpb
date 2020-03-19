@@ -192,10 +192,11 @@ input:checked[type="checkbox"]:before {
     float: left;
     width: fit-content;
     height: fit-content;
-    margin-top: -15vh ;
+    margin-top: -21vh ;
     margin-left: 60vw;
     position:relative;
 }
+
 .boxmodel:hover{
     transition: all 2s ;
     transform: scale(1.1);
@@ -237,7 +238,7 @@ img:hover{
     width: 5rem;
 }
 .portf1{
-    width: 50vw;
+    width: 25vw;
     height: auto;
 }
 .containerH{
@@ -279,14 +280,107 @@ body.dark .container3{
     grid-template-rows: 20vh 20vh 20vh 20vh 20vh;
     /* Border: 3px solid rgb(0, 81, 255); */
 }
-.container4{
-    height: 100vh;
-    padding-top: 5vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    align-items: center;
-    /* Border: 3px solid gold; */
+h4{
+    color: white;
+    text-align: center;
+    font-size: 3vh;
+}
+/* Slideshow container */
+.container-slides{
+    padding-top: 10vh;
+    /* Border: 3px solid rgb(0, 81, 255); */
+    min-height: 90vh;
+}
+.slideshow-container {
+    /* Border: 3px solid rgb(0, 255, 55); */
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 .container5{
     /* Border: 3px solid rgb(0, 225, 255); */
@@ -390,6 +484,19 @@ body.dark .item3{
     padding-left: 1vw;
     padding-top: 1vh;
     margin: 1vw;
+}
+.item5{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    padding: 0 auto;
+    padding-top:12vh;
+    border: 3px solid rgb(255, 102, 0);
+}
+.hr1{
+    border: 2px solid rgb(255, 255, 255);
+    width: 20vw;
 }
 body.dark .item4{
     grid-row-start: 4;
